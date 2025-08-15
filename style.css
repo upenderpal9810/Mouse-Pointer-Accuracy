@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #8fd19e;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#panel {
+    width: 80%;
+    max-width: 700px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+#ptop {
+    background-color: #46b346;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.elem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    margin-top: 10px;
+    background-color: white;
+    color: #46b346;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    min-width: 60px;
+}
+
+#pbtm {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    background-color: #292828;
+    min-height: 300px;
+}
+
+.bubble {
+    width: 50px;
+    height: 50px;
+    background-color: #9e0da9;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.bubble:hover {
+    background-color: #40f540;
+    transform: scale(1.1);
+}
+
+.btn {
+    background-color: #46b346;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #3a9b3a;
+}
+
+#difficulty-select {
+    margin: 10px 0;
+}
+
+#difficulty-select label {
+    color: #46b346;
+    font-weight: bold;
+    margin-right: 10px;
+}
